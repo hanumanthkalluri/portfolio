@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Professional portfolio showcasing full-stack development and UI/UX design skills" />
+    <meta name="keywords" content="developer, portfolio, full-stack, react, typescript, web development" />
+    <meta name="author" content="Your Name" />
+    <title>Your Portfolio - Full Stack Developer</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Custom cursor following mouse
+      document.addEventListener('mousemove', (e) => {
+        const cursor = document.querySelector('body::before');
+        if (cursor) {
+          document.documentElement.style.setProperty('--cursor-x', e.clientX + 'px');
+          document.documentElement.style.setProperty('--cursor-y', e.clientY + 'px');
+        }
+      });
+    </script>
+    <style>
+      body::before {
+        left: var(--cursor-x, 0);
+        top: var(--cursor-y, 0);
+      }
+    </style>
+  </body>
+</html>
