@@ -46,13 +46,18 @@ const Contact: React.FC = () => {
   const socialLinks = [
     { 
       icon: Github, 
-      href: 'https://github.com/hanumantharaokalluri', 
+      href: 'https://github.com/hanumanthkalluri', 
       label: 'GitHub' 
     },
     { 
       icon: Linkedin, 
       href: 'https://linkedin.com/in/hanumanth-kalluri', 
       label: 'LinkedIn' 
+    },
+    { 
+      icon: Twitter, 
+      href: 'https://twitter.com/HANUMAN59752595', 
+      label: 'twitter' 
     },
     { 
       icon: Mail, 

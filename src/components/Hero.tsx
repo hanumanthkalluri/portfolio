@@ -28,23 +28,27 @@ const Hero: React.FC = () => {
             Passionate about creating innovative AI solutions and building dynamic web applications. 
             Currently pursuing B.Tech in CSE with expertise in Machine Learning, Data Science, and Full-Stack Development.
           </p>
-          
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
-            <button className="group relative px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full text-white font-semibold transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/25">
-              <span className="flex items-center gap-2">
-                <Download size={20} />
-                Download Resume
-              </span>
-              <div className="absolute inset-0 rounded-full bg-white/20 scale-0 group-hover:scale-100 transition-transform duration-300"></div>
-            </button>
-            
-            <button 
-              onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
-              className="px-8 py-4 border-2 border-cyan-500 rounded-full text-cyan-400 font-semibold hover:bg-cyan-500 hover:text-white transition-all duration-300"
-            >
-              View My Work
-            </button>
-          </div>
+  <a
+    href="public\certificate\final_resume_hanumanth.pdf"
+    download
+    className="group relative px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full text-white font-semibold transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/25"
+  >
+    <span className="flex items-center gap-2 relative z-10">
+      <Download size={20} />
+      Download Resume
+    </span>
+    <div className="absolute inset-0 rounded-full bg-white/20 scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+  </a>
+
+  <button 
+    onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+    className="px-8 py-4 border-2 border-cyan-500 rounded-full text-cyan-400 font-semibold hover:bg-cyan-500 hover:text-white transition-all duration-300"
+  >
+    View My Work
+  </button>
+</div>
+
 
           <div className="flex justify-center space-x-6">
             <button

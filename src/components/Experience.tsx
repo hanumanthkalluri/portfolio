@@ -9,6 +9,7 @@ const Experience: React.FC = () => {
       location: 'Remote',
       period: 'May 2025 - Present',
       type: 'internship',
+      certificateUrl: '/certificates/Kalluri Hanumantharao_certificate.pdf',
       description: [
         'Performed exploratory data analysis and preprocessing on real-world datasets to extract actionable insights',
         'Built classification models using Logistic Regression, Decision Trees, and Random Forest for predictive analytics',
@@ -21,6 +22,7 @@ const Experience: React.FC = () => {
       location: 'Virtual',
       period: 'Jan 2025',
       type: 'internship',
+      certificateUrl: '/certificates/HANUMANTHARAO KALLURI aicte.pdf',
       description: [
         'Completed a structured training program focused on core AI/ML concepts and model deployment',
         'Built ML projects such as sentiment analysis and image classification using Python and TensorFlow',
@@ -51,23 +53,23 @@ const Experience: React.FC = () => {
   const certifications = [
     {
       name: 'Database Management System with Python',
-      url: 'public\certificate\Kalluri Hanumantharao_certificate.pdf',
+      url: '/certificates/Kalluri Hanumantharao_certificate.pdf',
     },
     {
       name: 'AWS Skill Builder Course Completion Certificate',
-      url: 'public\certificates',
+      url: '/certificates/AWS Skill Builder Course Completion Certificate.pdf',
     },
     {
       name: 'AICTE - Google AI/ML Virtual Internship Certification',
-      url: '/certificates/google-aicte-ml.pdf',
+      url: '/certificates/HANUMANTHARAO KALLURI aicte.pdf',
     },
     {
       name: 'Infosys Springboard 6.0 Generative AI Internship',
-      url: '/certificates/infosys-genai.pdf',
+      url: '/certificates/infsyis prompt.pdf',
     },
     {
       name: '300+ Problems Solved on LeetCode & HackerRank',
-      url: 'https://leetcode.com/your-profile',
+      url: 'https://leetcode.com/u/sonukalluri9/',
     },
   ];
 
@@ -92,7 +94,6 @@ const Experience: React.FC = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16">
-          {/* Internships */}
           <div>
             <h3 className="text-3xl font-bold text-cyan-400 mb-8">Internships</h3>
             <div className="space-y-8">
@@ -117,20 +118,29 @@ const Experience: React.FC = () => {
                         {internship.location}
                       </div>
                     </div>
-                    <ul className="space-y-2">
+                    <ul className="space-y-2 mb-4">
                       {internship.description.map((item, i) => (
                         <li key={i} className="text-gray-300 text-sm leading-relaxed">
                           • {item}
                         </li>
                       ))}
                     </ul>
+
+                    {internship.certificateUrl && (
+                      <a
+                        href={internship.certificateUrl}
+                        download
+                        className="inline-block px-4 py-2 mt-2 text-sm text-cyan-400 border border-cyan-400 rounded hover:bg-cyan-500/10 transition-all duration-300"
+                      >
+                        Download Certificate
+                      </a>
+                    )}
                   </div>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Education and Certifications */}
           <div>
             <h3 className="text-3xl font-bold text-cyan-400 mb-8">Education</h3>
             <div className="space-y-8">
@@ -161,7 +171,6 @@ const Experience: React.FC = () => {
               ))}
             </div>
 
-            {/* Certifications */}
             <div className="mt-12">
               <h3 className="text-2xl font-bold text-cyan-400 mb-6">Certifications & Achievements</h3>
               <div className="space-y-4">
@@ -169,9 +178,9 @@ const Experience: React.FC = () => {
                   <a
                     key={index}
                     href={cert.url}
-                    download
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    {...(cert.url.endsWith('.pdf')
+                      ? { download: '', target: undefined, rel: undefined }
+                      : { target: '_blank', rel: 'noopener noreferrer' })}
                     data-certification={cert.name}
                     className="block bg-slate-800/30 border border-cyan-500/20 rounded-lg p-4 hover:border-cyan-500/40 transition-all duration-300 cursor-pointer transform hover:scale-105"
                     onClick={() => handleItemClick(cert, 'certification')}
