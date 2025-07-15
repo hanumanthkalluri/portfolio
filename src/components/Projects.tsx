@@ -8,7 +8,7 @@ const Projects: React.FC = () => {
       description: 'Built a full-stack AI tool to generate dynamic mind maps from natural language prompts using the Gemini API. Features React frontend and Flask backend for real-time prompt handling.',
       image: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800',
       technologies: ['React', 'Flask', 'Gemini API', 'Python'],
-      liveUrl: '#',
+      liveUrl: 'https://aimindmapmaker.netlify.app/',
       githubUrl: 'https://github.com/hanumantharaokalluri',
       achievements: ['90% semantic alignment accuracy', 'Real-time mind map rendering', 'Export functionality']
     },
@@ -17,7 +17,7 @@ const Projects: React.FC = () => {
       description: 'Leveraged Meta\'s LLaMA2 language model via Hugging Face Transformers to simulate human-like medical interactions with contextual accuracy for general health queries.',
       image: 'https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg?auto=compress&cs=tinysrgb&w=800',
       technologies: ['LLaMA2', 'Python', 'Streamlit', 'Hugging Face'],
-      liveUrl: '#',
+      liveUrl: 'https://invoice-p2wm.onrender.com',
       githubUrl: 'https://github.com/hanumantharaokalluri',
       achievements: ['Real-time medical interactions', 'Token filtering system', 'Prompt engineering for safety']
     },
@@ -26,7 +26,7 @@ const Projects: React.FC = () => {
       description: 'Developed a responsive web application that allows users to generate QR codes for various data types such as text, URLs, contact details, and Wi-Fi credentials.',
       image: 'https://images.pexels.com/photos/8386422/pexels-photo-8386422.jpeg?auto=compress&cs=tinysrgb&w=800',
       technologies: ['HTML', 'CSS', 'JavaScript', 'qrcode.js'],
-      liveUrl: '#',
+      liveUrl: 'https://hanumantharaokalluri.github.io/qrgenerator/',
       githubUrl: 'https://github.com/hanumantharaokalluri',
       achievements: ['High scan accuracy', 'Custom styling options', 'One-click download feature']
     }
