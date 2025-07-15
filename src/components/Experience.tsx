@@ -9,7 +9,7 @@ const Experience: React.FC = () => {
       location: 'Remote',
       period: 'May 2025 - Present',
       type: 'internship',
-      certificateUrl: '/certificates/Kalluri Hanumantharao_certificate.pdf',
+      certificateUrl: '/certificates/KalluriHanumantharao_certificate.pdf',
       description: [
         'Performed exploratory data analysis and preprocessing on real-world datasets to extract actionable insights',
         'Built classification models using Logistic Regression, Decision Trees, and Random Forest for predictive analytics',
@@ -22,7 +22,7 @@ const Experience: React.FC = () => {
       location: 'Virtual',
       period: 'Jan 2025',
       type: 'internship',
-      certificateUrl: '/certificates/HANUMANTHARAO KALLURI aicte.pdf',
+      certificateUrl: '/certificates/HANUMANTHARAOKALLURIaicte.pdf',
       description: [
         'Completed a structured training program focused on core AI/ML concepts and model deployment',
         'Built ML projects such as sentiment analysis and image classification using Python and TensorFlow',
@@ -53,7 +53,7 @@ const Experience: React.FC = () => {
   const certifications = [
     {
       name: 'Database Management System with Python',
-      url: '/certificates/Kalluri Hanumantharao_certificate.pdf',
+      url: '/certificates/KalluriHanumantharao_certificate.pdf',
     },
     {
       name: 'AWS Skill Builder Course Completion Certificate',
@@ -61,11 +61,11 @@ const Experience: React.FC = () => {
     },
     {
       name: 'AICTE - Google AI/ML Virtual Internship Certification',
-      url: '/certificates/HANUMANTHARAO KALLURI aicte.pdf',
+      url: '/certificates/HANUMANTHARAOKALLURIaicte.pdf',
     },
     {
       name: 'Infosys Springboard 6.0 Generative AI Internship',
-      url: '/certificates/infsyis prompt.pdf',
+      url: '/certificates/infsyisprompt.pdf',
     },
     {
       name: '300+ Problems Solved on LeetCode & HackerRank',
