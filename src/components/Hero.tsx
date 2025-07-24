@@ -30,7 +30,7 @@ const Hero: React.FC = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
   <a
-    href="public/certificate/final_resume_hanumanth.pdf"
+    href="/certificates/final_resume_hanumanth.pdf"
     download
     className="group relative px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full text-white font-semibold transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/25"
   >

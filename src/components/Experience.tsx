@@ -3,32 +3,33 @@ import { Calendar, MapPin, Award } from 'lucide-react';
 
 const Experience: React.FC = () => {
   const internships = [
-    {
-      title: 'Data Science Intern',
-      company: 'Skill Dzire',
-      location: 'Remote',
-      period: 'May 2025 - Present',
-      type: 'internship',
-      certificateUrl: '/certificates/KalluriHanumantharao_certificate.pdf',
-      description: [
-        'Performed exploratory data analysis and preprocessing on real-world datasets to extract actionable insights',
-        'Built classification models using Logistic Regression, Decision Trees, and Random Forest for predictive analytics',
-        'Visualized trends and correlations using Matplotlib and Seaborn to support data-driven decision-making',
-      ],
-    },
-    {
+     {
       title: 'AI/ML Intern',
       company: 'AICTE - Google AI/ML Virtual Internship',
       location: 'Virtual',
       period: 'Jan 2025',
       type: 'internship',
-      certificateUrl: '/certificates/HANUMANTHARAOKALLURIaicte.pdf',
+      certificateUrl: 'certificates/KALLURIaicte.pdf',
       description: [
         'Completed a structured training program focused on core AI/ML concepts and model deployment',
         'Built ML projects such as sentiment analysis and image classification using Python and TensorFlow',
         'Learned model evaluation techniques including accuracy, precision, recall, and F1-score',
       ],
     },
+    {
+      title: 'Data Science Intern',
+      company: 'Skill Dzire',
+      location: 'Remote',
+      period: 'May 2025 - Present',
+      type: 'internship',
+      certificateUrl: 'certificates/datascience.pdf',
+      description: [
+        'Performed exploratory data analysis and preprocessing on real-world datasets to extract actionable insights',
+        'Built classification models using Logistic Regression, Decision Trees, and Random Forest for predictive analytics',
+        'Visualized trends and correlations using Matplotlib and Seaborn to support data-driven decision-making',
+      ],
+    },
+   
   ];
 
   const education = [
@@ -53,19 +54,19 @@ const Experience: React.FC = () => {
   const certifications = [
     {
       name: 'Database Management System with Python',
-      url: '/certificates/KalluriHanumantharao_certificate.pdf',
+      url: 'certificates/dbmsnptel.pdf',
     },
     {
       name: 'AWS Skill Builder Course Completion Certificate',
-      url: '/certificates/AWS Skill Builder Course Completion Certificate.pdf',
+      url: 'certificates/awscertificate.pdf',
     },
     {
       name: 'AICTE - Google AI/ML Virtual Internship Certification',
-      url: '/certificates/HANUMANTHARAOKALLURIaicte.pdf',
+      url: 'certificates/KALLURIaicte.pdf',
     },
     {
       name: 'Infosys Springboard 6.0 Generative AI Internship',
-      url: '/certificates/infsyisprompt.pdf',
+      url: 'certificates/infsyisprompt.pdf',
     },
     {
       name: '300+ Problems Solved on LeetCode & HackerRank',
